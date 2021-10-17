@@ -11,7 +11,15 @@ Plug 'justinmk/vim-syntax-extra'
 Plug 'tikhomirov/vim-glsl' 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+Plug 'Yggdroot/indentLine'
+
 call plug#end()
+
+" plugin config
+let g:indentLine_char = '│'
+let g:indentLine_showFirstIndentLevel = 1
+let g:indentLine_first_char = '│'
+
 "~~~~~~~~~~~~
 
 " line numbers
@@ -38,6 +46,7 @@ nnoremap <leader>K :wincmd s<CR>  :wincmd k<CR>
 nnoremap <leader>e :Vexplore!<CR>
 nnoremap <leader>E :Ex<CR>
 nnoremap <leader>t :Texplore<CR>
+let g:netrw_banner = 0
 
 " misc
 nnoremap <leader><Bslash> :noh<CR>
