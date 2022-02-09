@@ -29,44 +29,45 @@ set number
 let mapleader = " " " set leader for custom bindings to space prevents namespace collisions
 
 " make window commands a little simpler (ctrl + w sucks to press)
-nnoremap <leader>h :wincmd h<CR>
-nnoremap <leader>j :wincmd j<CR>
-nnoremap <leader>k :wincmd k<CR>
-nnoremap <leader>l :wincmd l<CR>
-nnoremap <leader>q :wincmd q<CR>
-nnoremap <leader>Q :q!<CR>
+nnoremap <silent><leader>h :wincmd h<CR>
+nnoremap <silent><leader>j :wincmd j<CR>
+nnoremap <silent><leader>k :wincmd k<CR>
+nnoremap <silent><leader>l :wincmd l<CR>
+nnoremap <silent><leader>q :wincmd q<CR>
+nnoremap <silent><leader>Q :q!<CR>
 
 " faster splitting
-nnoremap <leader>H :wincmd v<bar> :wincmd h<CR>
-nnoremap <leader>L :wincmd v<CR>  :wincmd l<CR>
-nnoremap <leader>J :wincmd s<bar> :wincmd j<CR>
-nnoremap <leader>K :wincmd s<CR>  :wincmd k<CR>
+nnoremap <silent><leader>H :wincmd v<bar> :wincmd h<CR>
+nnoremap <silent><leader>L :wincmd v<CR>  :wincmd l<CR>
+nnoremap <silent><leader>J :wincmd s<bar> :wincmd j<CR>
+nnoremap <silent><leader>K :wincmd s<CR>  :wincmd k<CR>
 
 " file explorer
-nnoremap <leader>e :Vexplore!<CR>
-nnoremap <leader>E :Ex<CR>
-nnoremap <leader>t :Texplore<CR>
+nnoremap <silent><leader>e :Vexplore!<CR>
+nnoremap <silent><leader>E :Ex<CR>
+nnoremap <silent><leader>t :Texplore<CR>
+nnoremap <silent>- :Ex<CR>
 let g:netrw_banner = 0
 
 " misc
-nnoremap <leader><Bslash> :noh<CR>
-nnoremap <tab> I<tab><esc>
-nnoremap <s-tab> I<backspace><esc>
-nnoremap <leader>= ggVG=''
+nnoremap <silent><leader><Bslash> :noh<CR>
+nnoremap <silent><tab> I<tab><esc>
+nnoremap <silent><s-tab> I<backspace><esc>
+nnoremap <silent><leader>= ggVG=''
 
 " copy paste 
-nnoremap <leader>p "0p
-vnoremap <leader>p "0p
+nnoremap <silent><leader>p "0p
+vnoremap <silent><leader>p "0p
 
-nnoremap <leader>P "+p
-vnoremap <leader>P "+p
+nnoremap <silent><leader>P "+p
+vnoremap <silent><leader>P "+p
 
 " enables terminal copy and paste keys
-nnoremap <C-V>P "+p
-nnoremap <C-V>P "+p
+nnoremap <silent><C-V>P "+p
+nnoremap <silent><C-V>P "+p
 
 " quick toggle some settings
-nnoremap <silent> <leader>w :call ToggleWrap()<CR>
+nnoremap <silent><leader>w :call ToggleWrap()<CR>
 function! ToggleWrap()
     if &l:wrap
         let &l:wrap = 0
