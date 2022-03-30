@@ -8,18 +8,28 @@ Plug 'eluum/vim-autopair'
 Plug 'morhetz/gruvbox'
 " Plug 'xuhdev/vim-latex-live-preview'
 Plug 'justinmk/vim-syntax-extra'
-Plug 'tikhomirov/vim-glsl' 
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
+Plug 'sickill/vim-monokai'
+Plug 'vim-python/python-syntax'
 
 call plug#end()
 
 " plugin config
+
+" indent line 
 let g:indentLine_char = '│'
 let g:indentLine_showFirstIndentLevel = 1
 let g:indentLine_first_char = '│'
 
+" python syntax
+let g:python_highlight_builtins = 1
+let g:python_highlight_func_calls = 1
+let g:python_highlight_class_vars = 1
+let g:python_highlight_file_headers_as_comments = 1
+let g:python_highlight_string_formatting = 1
+let g:python_highlight_string_format = 1
 "~~~~~~~~~~~~
 
 " line numbers
@@ -64,7 +74,9 @@ vnoremap <silent><leader>P "+p
 
 " enables terminal copy and paste keys
 nnoremap <silent><C-V>P "+p
-nnoremap <silent><C-V>P "+p
+vnoremap <silent><C-V>P "+p
+
+vnoremap <silent><C-C>"+y
 
 " quick toggle some settings
 nnoremap <silent><leader>w :call ToggleWrap()<CR>
@@ -106,6 +118,7 @@ set nobackup
 set nowritebackup
 set noswapfile
 set noundofile
+set mouse=a
 
 set encoding=UTF-8 " allow unicode symbols
 set formatoptions-=cro " no comment formatting 
@@ -122,20 +135,4 @@ set suffixes-=.obj
 
 " color scheme
 set termguicolors
-colorscheme gruvbox
-hi Normal guibg=NONE ctermbg=NONE
-hi EndOfBuffer guibg=NONE ctermbg=NONE
-hi lineNr guibg=NONE ctermbg=NONE
-hi CursorLine guibg=NONE ctermbg=NONE
-hi VertSplit guibg=NONE
-
-" grey line numbers
-highlight lineNr ctermfg=DarkGrey guifg=DarkGrey
-
-" make highlights legible
-highlight Search ctermfg=Black
-highlight IncSearch ctermfg=Black
-highlight ErrorMsg ctermfg=Black
-highlight Error ctermfg=Black
-highlight MatchParen ctermfg=Cyan
-highlight MatchParen ctermbg=Black
+colorscheme monokai
