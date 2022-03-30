@@ -13,6 +13,8 @@ Plug 'junegunn/fzf.vim'
 Plug 'Yggdroot/indentLine'
 Plug 'sickill/vim-monokai'
 Plug 'vim-python/python-syntax'
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 
 call plug#end()
 
