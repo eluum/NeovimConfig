@@ -13,12 +13,14 @@ Plug 'junegunn/fzf.vim'
 "Plug 'Yggdroot/indentLine'
 "Plug 'sickill/vim-monokai'
 Plug 'crusoexia/vim-monokai'
+Plug 'rebelot/kanagawa.nvim'
 Plug 'vim-python/python-syntax'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
+Plug 'lervag/vimtex'
 
 call plug#end()
 
@@ -37,6 +39,11 @@ let g:python_highlight_class_vars = 1
 let g:python_highlight_file_headers_as_comments = 1
 let g:python_highlight_string_formatting = 1
 let g:python_highlight_string_format = 1
+
+" vimtex
+let maplocalleader = "\\"
+let g:vimtex_view_method = 'zathura'
+
 "~~~~~~~~~~~~
 
 " line numbers
@@ -117,9 +124,9 @@ endfunction
 set incsearch
 set hlsearch
 
-" coding stuff
-syntax on
-set expandtab
+" coding stuff 
+syntax on 
+set expandtab 
 set smartindent 
 set nowrap
 set smartcase
@@ -147,4 +154,4 @@ set suffixes-=.obj
 
 " color scheme
 set termguicolors
-colorscheme monokai
+colorscheme kanagawa
