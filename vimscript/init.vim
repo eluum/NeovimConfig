@@ -4,15 +4,16 @@ call plug#begin('~/.vim/plugged')
 " my plugins
 Plug 'eluum/vim-autopair'
 
-" other plugins
+" colorschemes
 Plug 'morhetz/gruvbox'
+Plug 'crusoexia/vim-monokai'
+Plug 'vv9k/bogster'
+
+" other plugins
 " Plug 'xuhdev/vim-latex-live-preview'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-"Plug 'Yggdroot/indentLine'
-"Plug 'sickill/vim-monokai'
-Plug 'crusoexia/vim-monokai'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'vim-python/python-syntax'
 Plug 'kyazdani42/nvim-web-devicons'
@@ -20,6 +21,7 @@ Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
+Plug 'JuliaEditorSupport/julia-vim'
 Plug 'lervag/vimtex'
 
 call plug#end()
@@ -95,7 +97,7 @@ vnoremap <silent><leader>P "+p
 nnoremap <silent><C-V>P "+p
 vnoremap <silent><C-V>P "+p
 
-vnoremap <silent><C-C>"+y
+"vnoremap <silent><C-C>"+y
 
 " quick toggle some settings
 nnoremap <silent><leader>w :call ToggleWrap()<CR>
@@ -154,4 +156,4 @@ set suffixes-=.obj
 
 " color scheme
 set termguicolors
-colorscheme kanagawa
+colorscheme bogster
