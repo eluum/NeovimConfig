@@ -156,4 +156,7 @@ set suffixes-=.obj
 
 " color scheme
 set termguicolors
-colorscheme bogster
+colorscheme habamax
+
+" custom highlighting
+hi MatchParen gui=bold guibg=black guifg=white
