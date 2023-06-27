@@ -160,3 +160,5 @@ colorscheme habamax
 
 " custom highlighting
 hi MatchParen gui=bold guibg=black guifg=white
+hi Keyword gui=italic,bold guibg=dark guifg=#af87af
+hi Comment gui=italic
