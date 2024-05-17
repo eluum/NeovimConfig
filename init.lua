@@ -73,6 +73,6 @@ require('lsp_extensions').inlay_hints{highlight = "Comment", enabled = {"TypeHin
 require('bufferline').setup {
     options = {
         mode = "tabs",
-        separator_style = "padded_slant",
+        separator_style = "|",
     }
 }

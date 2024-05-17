@@ -8,13 +8,14 @@ Plug 'eluum/vim-autopair'
 Plug 'morhetz/gruvbox'
 Plug 'crusoexia/vim-monokai'
 Plug 'vv9k/bogster'
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'rebelot/kanagawa.nvim'
 
 " other plugins
 " Plug 'xuhdev/vim-latex-live-preview'
 Plug 'justinmk/vim-syntax-extra'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'rebelot/kanagawa.nvim'
 Plug 'vim-python/python-syntax'
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
@@ -156,9 +157,9 @@ set suffixes-=.obj
 
 " color scheme
 set termguicolors
-colorscheme habamax
+colorscheme catppuccin-macchiato
 
 " custom highlighting
-hi MatchParen gui=bold guibg=black guifg=white
-hi Keyword gui=italic,bold guibg=dark guifg=#af87af
-hi Comment gui=italic
+" hi MatchParen gui=bold guibg=black guifg=white
+" hi Keyword gui=italic,bold guibg=dark guifg=#af87af
+" hi Comment gui=italic
