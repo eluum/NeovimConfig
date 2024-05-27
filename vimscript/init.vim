@@ -18,7 +18,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'vim-python/python-syntax'
 Plug 'kyazdani42/nvim-web-devicons'
-Plug 'akinsho/bufferline.nvim', { 'tag': 'v2.*' }
+Plug 'akinsho/bufferline.nvim'
 Plug 'neovim/nvim-lspconfig'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
@@ -28,12 +28,6 @@ Plug 'lervag/vimtex'
 call plug#end()
 
 " plugin config
-
-" indent line 
-" let g:indentLine_char = '│'
-" let g:indentLine_showFirstIndentLevel = 1
-" let g:indentLine_first_char = '│'
-let g:indent_blankline_show_trailing_blankline_indent="false"
 
 " python syntax
 let g:python_highlight_builtins = 1

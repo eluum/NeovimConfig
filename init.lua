@@ -64,8 +64,10 @@ vim.lsp.handlers.signature_help,
 }
 )
 
-require("indent_blankline").setup {
-    show_trailing_blankline_indent = false,
+require("ibl").setup {
+    whitespace = {
+	    remove_blankline_trail = false
+    }
 }
 
 require('lsp_extensions').inlay_hints{highlight = "Comment", enabled = {"TypeHint", "ParameterHint"}}
