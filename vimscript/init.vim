@@ -13,6 +13,7 @@ Plug 'rebelot/kanagawa.nvim'
 
 " other plugins
 " Plug 'xuhdev/vim-latex-live-preview'
+Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
 Plug 'justinmk/vim-syntax-extra'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
