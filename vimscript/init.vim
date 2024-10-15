@@ -10,6 +10,13 @@ Plug 'crusoexia/vim-monokai'
 Plug 'vv9k/bogster'
 Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
 Plug 'rebelot/kanagawa.nvim'
+Plug 'savq/melange-nvim'
+Plug 'sainnhe/everforest'
+Plug 'zenbones-theme/zenbones.nvim'
+Plug 'shaunsingh/nord.nvim'
+Plug 'pineapplegiant/spaceduck'
+Plug 'ribru17/bamboo.nvim'
+Plug 'lifepillar/vim-solarized8', {'branch': 'neovim'}
 
 " other plugins
 " Plug 'xuhdev/vim-latex-live-preview'
@@ -152,7 +159,8 @@ set suffixes-=.obj
 
 " color scheme
 set termguicolors
-colorscheme catppuccin-macchiato
+" colorscheme catppuccin-macchiato
+colorscheme solarized8_high
 
 " custom highlighting
 " hi MatchParen gui=bold guibg=black guifg=white
