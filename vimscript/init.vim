@@ -17,6 +17,7 @@ Plug 'shaunsingh/nord.nvim'
 Plug 'pineapplegiant/spaceduck'
 Plug 'ribru17/bamboo.nvim'
 Plug 'lifepillar/vim-solarized8', {'branch': 'neovim'}
+Plug 'loctvl842/monokai-pro.nvim'
 
 " other plugins
 " Plug 'xuhdev/vim-latex-live-preview'
@@ -160,7 +161,7 @@ set suffixes-=.obj
 " color scheme
 set termguicolors
 " colorscheme catppuccin-macchiato
-colorscheme solarized8_high
+colorscheme monokai-pro-spectrum
 
 " custom highlighting
 " hi MatchParen gui=bold guibg=black guifg=white
