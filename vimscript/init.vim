@@ -18,6 +18,7 @@ Plug 'pineapplegiant/spaceduck'
 Plug 'ribru17/bamboo.nvim'
 Plug 'lifepillar/vim-solarized8', {'branch': 'neovim'}
 Plug 'loctvl842/monokai-pro.nvim'
+Plug 'NLKNguyen/papercolor-theme'
 
 " other plugins
 " Plug 'xuhdev/vim-latex-live-preview'
@@ -33,6 +34,7 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/lsp_extensions.nvim'
 Plug 'JuliaEditorSupport/julia-vim'
 Plug 'lervag/vimtex'
+Plug 'NLKNguyen/papercolor-theme'
 
 call plug#end()
 
@@ -161,7 +163,13 @@ set suffixes-=.obj
 " color scheme
 set termguicolors
 " colorscheme catppuccin-macchiato
-colorscheme monokai-pro-spectrum
+" colorscheme monokai-pro-spectrum
+" colorscheme sorbet
+
+" colorscheme solarized8_high
+" set bg=light
+"
+colorscheme PaperColor
 
 " custom highlighting
 " hi MatchParen gui=bold guibg=black guifg=white
